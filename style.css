@@ -1,0 +1,85 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0 auto;
+    padding-top: 40px;
+    width: 100%;
+}
+
+h1, h3, p {
+    text-align: center;
+}
+
+.actions {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.actions div {
+    display: inline-block;
+    width: 400px;
+}
+
+.p {
+    display: inline-block;
+    margin: 0;
+}
+
+.btn {
+    width: 100px;
+    border: 0;
+    background: transparent;
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+#prev {
+    transform: rotate(180deg);
+}
+
+#title {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.slick-center img {
+    animation: leaves 0.2s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.slick-list {
+    margin-left: -35px;
+}
+
+.slick-slide {
+    margin: 70px 0;
+    margin-left: 35px;
+}
+
+@keyframes leaves {
+    0% {
+        transform: scale(1.0);
+    }
+    100% {
+        transform: scale(1.8);
+    }
+}
+
+@media(max-width: 770px) {
+    @keyframes leaves {
+        0% {
+            transform: scale(1.0);
+        }
+        100% {
+            transform: scale(1.3);
+        }
+    }
+}
